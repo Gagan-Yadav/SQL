@@ -1,3 +1,4 @@
+-- The following syntax can create a database.
 CREATE DATABASE MyDatabase;
 
 -- Use the following syntax to replace the current database with another database you’re working on:

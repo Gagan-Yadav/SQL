@@ -32,3 +32,33 @@ ALTER TABLE Marks DROP Grade;
 
 -- To add a primary key to a table, do the following
 ALTER TABLE Marks ADD PRIMARY KEY (ID);
+
+-- To remove the primary key of a table, do the following:
+ALTER TABLE Marks DROP PRIMARY KEY;
+
+-- You can drop a table using the following command:
+DROP TABLE IF EXISTS Marks;
+
+-- To show the columns of a table, type the following code:
+DESCRIBE Marks; 
+
+-- To show the information of a column of a table, type the following command:
+DESCRIBE table_name column_name;
+
+-- Remove duplicate rows from a query’s result:
+SELECT DISTINCT (column) FROM Table_name;
+
+
+            -- MySQL command-line client commands
+            -- mysql -u [username] -p;
+            -- To connect MySQL server using MySQL command-line client with a username and password (MySQL will prompt for a password).
+
+            -- mysql -u [username] -p [database];
+            -- To connect MySQL Server with a specified database using a username and password.
+
+            -- exit;
+            -- To exit MySQL command line.
+
+            -- mysql> system clear;
+            -- On Linux, type the above command to clear the MySQL screen console window.
+            -- On Windows OS, there is currently no command to clear the MySQL screen console.

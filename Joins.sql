@@ -23,5 +23,8 @@ SELECT Customers.CustomerName, Orders.OrderID FROM Customers LEFT JOIN Orders ON
 -- The result is 0 records from the left side, if there is no match.
 
 SELECT column_name(s) FROM table1 RIGHT JOIN table2 ON table1.column_name = table2.column_name;
+-- Example
+SELECT Orders.OrderID, Employees.LastName, Employees.FirstName FROM Orders RIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID ORDER BY Orders.OrderID;
+
 
 -- FULL (OUTER) JOIN :  Returns all records when there is a match in either left or right table

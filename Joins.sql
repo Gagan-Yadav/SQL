@@ -34,3 +34,17 @@ SELECT Orders.OrderID, Employees.LastName, Employees.FirstName FROM Orders RIGHT
 SELECT column_name(s) FROM table1 FULL OUTER JOIN table2 ON table1.column_name = table2.column_name WHERE condition;
 -- Example
 SELECT Customers.CustomerName, Orders.OrderID FROM Customers FULL OUTER JOIN Orders ON Customers.CustomerID=Orders.CustomerID ORDER BY Customers.CustomerName;
+-- Note : The FULL OUTER JOIN keyword returns all matching records from both tables whether the other table matches or not.
+       -- So, if there are rows in "Customers" that do not have matches in "Orders", or if there are rows in "Orders" that 
+       -- do not have matches in "Customers", those rows will be listed as well.
+
+-- SQL Self Join :
+-- A self join is a regular join, but the table is joined with itself.       
+
+SELECT column_name(s) FROM table1 T1, table1 T2 WHERE condition;
+-- Example
+SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
+FROM Customers A, Customers B
+WHERE A.CustomerID <> B.CustomerID
+AND A.City = B.City
+ORDER BY A.City;

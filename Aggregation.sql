@@ -23,3 +23,6 @@ select ceil(avg(salary) - avg(replace(salary, '0', ''))) from employees;
 -- The sum of all values in LAT_N rounded to a scale of  decimal places.
 -- The sum of all values in LONG_W rounded to a scale of  decimal places.
 SELECT ROUND(SUM(LAT_N), 2), ROUND(SUM(LONG_W), 2) FROM STATION;
+
+-- Write a query to find the sum of the Northern Latitudes having values greater than 38.7880 and less than 137.2345 up to 4 decimal places.
+SELECT ROUND(SUM(LAT_N),4) FROM STATION WHERE LAT_N BETWEEN 38.7880 AND 137.2345;

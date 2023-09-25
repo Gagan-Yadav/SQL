@@ -18,3 +18,8 @@ SELECT MAX(Population) - MIN(Population) FROM City;
 -- finding the difference between her miscalculation (using salaries with any zeros removed), and the actual average salary.
 -- Write a query calculating the amount of error (i.e.: average monthly salaries), and round it up to the next integer.
 select ceil(avg(salary) - avg(replace(salary, '0', ''))) from employees;
+
+-- Query the following two values from the STATION table:
+-- The sum of all values in LAT_N rounded to a scale of  decimal places.
+-- The sum of all values in LONG_W rounded to a scale of  decimal places.
+SELECT ROUND(SUM(LAT_N), 2), ROUND(SUM(LONG_W), 2) FROM STATION;

@@ -45,5 +45,5 @@ SELECT ROUND(MIN(LAT_N),4) FROM STATION WHERE LAT_N > 38.7780;
 -- A median is defined as a number separating the higher half of a data set from the lower half.Query the median of the Northern Latitudes (LAT_N) from STATION and round your answer to 44 decimal places.
 Select round(St.LAT_N,4) from station St where (select count(Lat_N) from station where Lat_N < St.LAT_N ) = (select count(Lat_N) from station where Lat_N > St.LAT_N);
 
-
+-- Query the Western Longitude (LONG_W) for the smallest Northern Latitude (LAT_N) in STATION that is greater than 38.778038.7780. Round your answer to 44 decimal places.
 select round(LONG_W,4) from station where LAT_N = (select min(LAT_N) from station where LAT_N > 38.7780);

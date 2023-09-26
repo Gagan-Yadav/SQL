@@ -38,3 +38,5 @@ select months*salary, count(*) from employee group by months*salary order by mon
 
 -- Query a count of the number of cities in CITY having a Population larger than 100,000.
 SELECT COUNT(NAME) FROM CITY WHERE POPULATION > 100000;
+
+SELECT ROUND(MIN(LAT_N),4) FROM STATION WHERE LAT_N > 38.7780;

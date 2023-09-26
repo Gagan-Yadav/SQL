@@ -41,3 +41,6 @@ SELECT COUNT(NAME) FROM CITY WHERE POPULATION > 100000;
 
 -- Write a query to find the smallest value of the Northern Latitudes greater than 38.7780 up to 4 decimal places.
 SELECT ROUND(MIN(LAT_N),4) FROM STATION WHERE LAT_N > 38.7780;
+
+
+Select round(St.LAT_N,4) mediam from station St where (select count(Lat_N) from station where Lat_N < St.LAT_N ) = (select count(Lat_N) from station where Lat_N > St.LAT_N);

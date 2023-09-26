@@ -13,9 +13,8 @@ SELECT SUM(Population) FROM City WHERE CountryCode='JPN';
 -- Query the difference between the maximum and minimum populations in CITY.
 SELECT MAX(Population) - MIN(Population) FROM City;
 
--- Samantha was tasked with calculating the average monthly salaries for all employees in the EMPLOYEES table, 
--- but did not realize her keyboard’s 0 key was broken until after completing the calculation. She wants your help 
--- finding the difference between her miscalculation (using salaries with any zeros removed), and the actual average salary.
+-- Samantha was tasked with calculating the average monthly salaries for all employees in the EMPLOYEES table, but did not realize her keyboard’s 0 key was broken until after 
+-- completing the calculation. She wants your help finding the difference between her miscalculation (using salaries with any zeros removed), and the actual average salary.
 -- Write a query calculating the amount of error (i.e.: average monthly salaries), and round it up to the next integer.
 select ceil(avg(salary) - avg(replace(salary, '0', ''))) from employees;
 
@@ -32,6 +31,3 @@ SELECT ROUND(MAX(LAT_N),4) FROM STATION WHERE LAT_N < 137.2345;
 
 -- Write a query to find the corresponding Western Longitude value for the greatest value of the Northern Latitudes less than 137.2345 up to 4 decimal places.
 SELECT ROUND(LONG_W,4) FROM STATION WHERE LAT_N = (SELECT MAX(LAT_N) FROM STATION WHERE LAT_N < 137.2345);
-
--- Query a count of the number of cities in CITY having a Population larger than 100,000.
-SELECT count(NAME) FROM CITY WHERE POPULATION > 100000;

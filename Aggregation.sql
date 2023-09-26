@@ -31,3 +31,9 @@ SELECT ROUND(MAX(LAT_N),4) FROM STATION WHERE LAT_N < 137.2345;
 
 -- Write a query to find the corresponding Western Longitude value for the greatest value of the Northern Latitudes less than 137.2345 up to 4 decimal places.
 SELECT ROUND(LONG_W,4) FROM STATION WHERE LAT_N = (SELECT MAX(LAT_N) FROM STATION WHERE LAT_N < 137.2345);
+
+-- We define an employee's total earnings to be their monthly  worked, and the maximum total earnings to be the maximum total earnings for any employee in the Employee table.
+-- Write a query to find the maximum total earnings for all employees as well as the total number of employees who have maximum total earnings. Then print these values as  space-separated integers.
+select months*salary, count(*) from employee group by months*salary order by months*salary desc limit 1;
+
+-- Query a count of the number of cities in CITY having a Population larger than 100,000.

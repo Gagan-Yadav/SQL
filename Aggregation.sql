@@ -37,3 +37,4 @@ SELECT ROUND(LONG_W,4) FROM STATION WHERE LAT_N = (SELECT MAX(LAT_N) FROM STATIO
 select months*salary, count(*) from employee group by months*salary order by months*salary desc limit 1;
 
 -- Query a count of the number of cities in CITY having a Population larger than 100,000.
+SELECT COUNT(NAME) FROM CITY WHERE POPULATION > 100000;

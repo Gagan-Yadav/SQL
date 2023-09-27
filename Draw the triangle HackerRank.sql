@@ -7,6 +7,13 @@
 SELECT CASE WHEN A + B <= C OR A + C <= B OR B + C <= A THEN 'Not A Triangle' WHEN A = B AND B = C THEN 'Equilateral' WHEN A = B OR B = C OR A = C THEN 'Isosceles' ELSE 'Scalene' END FROM TRIANGLES;
 
 
+-- P(R) represents a pattern drawn by Julia in R rows. The following pattern represents P(5):
+-- * * * * * 
+-- * * * * 
+-- * * * 
+-- * * 
+-- *
+-- Write a query to print the pattern P(20).
 
 SET @no_of_lines = 20 + 1;
 SELECT REPEAT('* ', @no_of_lines := @no_of_lines -1) FROM INFORMATION_SCHEMA.TABLES;

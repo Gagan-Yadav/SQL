@@ -14,6 +14,16 @@ SELECT CASE WHEN A + B <= C OR A + C <= B OR B + C <= A THEN 'Not A Triangle' WH
 -- * * 
 -- *
 -- Write a query to print the pattern P(20).
-
 SET @no_of_lines = 20 + 1;
 SELECT REPEAT('* ', @no_of_lines := @no_of_lines -1) FROM INFORMATION_SCHEMA.TABLES;
+
+
+-- P(R) represents a pattern drawn by Julia in R rows. The following pattern represents P(5):
+-- * 
+-- * * 
+-- * * * 
+-- * * * * 
+-- * * * * *
+-- Write a query to print the pattern P(20).
+set @number = 0;
+select repeat('* ', @number := @number + 1) from information_schema.tables where @number < 20;

@@ -6,3 +6,7 @@
 -- Not A Triangle: The given values of A, B, and C don't form a triangle.
 SELECT CASE WHEN A + B <= C OR A + C <= B OR B + C <= A THEN 'Not A Triangle' WHEN A = B AND B = C THEN 'Equilateral' WHEN A = B OR B = C OR A = C THEN 'Isosceles' ELSE 'Scalene' END FROM TRIANGLES;
 
+
+
+SET @no_of_lines = 20 + 1;
+SELECT REPEAT('* ', @no_of_lines := @no_of_lines -1) FROM INFORMATION_SCHEMA.TABLES;

@@ -9,7 +9,7 @@ SELECT column_name(s) FROM table1 INNER JOIN table2 ON table1.column_name = tabl
 SELECT Orders.OrderID, Customers.CustomerName FROM Orders INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
 
 
--- LEFT (OUTER) JOIN :  
+-- LEFT (OUTER) JOIN :     
 -- The LEFT JOIN keyword returns all records from the left table (table1), and the matching records from the right table (table2).
 -- The result is 0 records from the right side, if there is no match.
 

@@ -161,3 +161,55 @@ DQL
 16.Optimizations
 
 • Indexing Strategies • Query Optimization
+
+17.Normalization
+
+• 1NF(Normal Form)
+
+• 2NF
+
+• 3NF
+
+• BCNF
+
+18.Backup and Recovery
+
+• Database Backups
+
+• Point-in-Time Recovery
+
+19.NoSQL Databases
+
+• MongoDB
+
+• Cassandra etc...
+
+• Key differences
+
+20. Data Integrity
+
+• Primary Key
+
+• Foreign Key
+
+21.Advanced SQL Queries
+
+• Window Functions
+
+• Common Table Expressions (CTES)
+
+22.Full-Text Search
+
+• Full-Text Indexes
+
+• Search Optimization
+
+23. Data Import and Export
+
+• Importing and Exporting Data (CSV, JSON) • Using SQL Dump Files
+
+24. Database Design
+
+• Entity-Relationship Diagrams (ERDs)
+
+• Normalization Techniques

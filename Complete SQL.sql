@@ -109,3 +109,55 @@ DQL
 • Joining tables
 
 • Correlated Subqueries
+
+11. Views
+
+• Creating
+
+• Modifying
+
+• Dropping Views
+
+12. Transactions
+
+• ACID Properties
+
+• COMMIT
+
+• ROLLBACK
+
+• SAVEPOINT
+
+• ROLLBACK TO SAVEPOINT
+
+13.Stored Procedures
+
+• CREATE PROCEDURE
+
+• ALTER PROCEDURE
+
+• DROP PROCEDURE
+
+• EXECUTE PROCEDURE
+
+• User-Defined Functions (UDFs)
+
+14.Triggers
+
+• Trigger Events
+
+• Trigger Execution and Syntax
+
+15. Security and Permissions
+
+• CREATE USER • GRANT
+
+• REVOKE
+
+• ALTER USER
+
+• DROP USER
+
+16.Optimizations
+
+• Indexing Strategies • Query Optimization

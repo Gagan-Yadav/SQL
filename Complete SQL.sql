@@ -213,3 +213,21 @@ DQL
 • Entity-Relationship Diagrams (ERDs)
 
 • Normalization Techniques
+
+25.Advanced Indexing
+
+• Composite Indexes
+
+• Covering Indexes
+
+26.Database Transactions
+
+• Savepoints and Nested Transactions
+
+• Two-Phase Commit Protocol
+
+27.Performance Tuning
+
+• Query Profiling and Analysis
+
+• Query Cache Optimization

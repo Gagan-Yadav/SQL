@@ -151,6 +151,7 @@ TCL is used to manage transactions, ensuring the consistency and integrity of th
   DROP VIEW employee_view;
 
 12. Transactions
+    In the context of database management systems (DBMS), a transaction is a logical unit of work that consists of one or more SQL statements. Transactions are used to ensure the integrity and consistency of a database by following the ACID properties (Atomicity, Consistency, Isolation, and Durability). 
 
 • ACID Properties
     The ACID properties are a set of characteristics that ensure the reliability and consistency of transactions in a database system. ACID stands for Atomicity, Consistency, Isolation, and Durability. These properties are essential for maintaining the integrity of the database and ensuring that transactions are processed reliably.

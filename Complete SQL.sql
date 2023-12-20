@@ -153,6 +153,25 @@ TCL is used to manage transactions, ensuring the consistency and integrity of th
 12. Transactions
 
 • ACID Properties
+    The ACID properties are a set of characteristics that ensure the reliability and consistency of transactions in a database system. ACID stands for Atomicity, Consistency, Isolation, and Durability. These properties are essential for maintaining the integrity of the database and ensuring that transactions are processed reliably.
+
+1. Atomicity:
+Definition: Atomicity ensures that a transaction is treated as a single, indivisible unit of work. Either all the changes made by the transaction are committed to the database, or none of them are. If any part of the transaction fails, the entire transaction is rolled back to its original state.
+Example: Consider a funds transfer between two bank accounts. Either the entire transfer occurs successfully, updating the balance in both accounts, or none of it happens.
+
+2. Consistency:
+Definition: Consistency ensures that a transaction brings the database from one valid state to another. The database must meet a set of predefined integrity constraints before and after the transaction. If a transaction violates any of these constraints, it is rolled back.
+Example: If a database enforces a constraint that every employee must belong to a department, a transaction attempting to add an employee without a department affiliation would be rolled back.
+
+3. Isolation:
+Definition: Isolation ensures that the execution of one transaction is independent and isolated from the execution of other transactions. Each transaction appears to be the only transaction in the system, even though multiple transactions may be executing concurrently. Isolation prevents interference between transactions.
+Example: If two transactions are updating the same data concurrently, isolation ensures that each transaction sees the data as it existed before the other transaction started.
+
+4. Durability:
+Definition: Durability guarantees that once a transaction is committed, its changes are permanent and will survive any subsequent failures, such as power outages or system crashes. The changes made by the transaction are stored in non-volatile storage and can be recovered even if the system restarts.
+Example: After a user confirms a purchase on an e-commerce website, the transaction is committed, and the user can be confident that the purchase details will not be lost even if there is a system failure.
+
+Ensuring that transactions adhere to the ACID properties is crucial for maintaining data integrity and reliability in database systems, especially in scenarios where multiple transactions may be occurring simultaneously.
 
 • COMMIT
 

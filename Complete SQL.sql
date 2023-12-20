@@ -70,6 +70,7 @@ TCL is used to manage transactions, ensuring the consistency and integrity of th
 5. Data Manipulation
 
 • INSERT
+  INSERT INTO employees (employee_id, first_name, last_name, salary) VALUES (101, 'John', 'Doe', 50000);
 
 • UPDATE
 

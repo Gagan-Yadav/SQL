@@ -53,6 +53,7 @@ DQL
 • INSERT
 
 • UPDATE
+ UPDATE employees SET salary = 55000 WHERE employee_id = 101;
 
 • DELETE
 

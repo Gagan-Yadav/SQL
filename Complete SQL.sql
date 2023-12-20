@@ -121,7 +121,9 @@ TCL is used to manage transactions, ensuring the consistency and integrity of th
 
 10.Subqueries
 
-• Subqueries used in • Filtering data
+• Subqueries used in
+  
+• Filtering data
 
 • Aggregating data
 

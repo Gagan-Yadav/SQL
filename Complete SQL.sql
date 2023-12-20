@@ -84,8 +84,10 @@ TCL is used to manage transactions, ensuring the consistency and integrity of th
   ALTER TABLE employees ADD COLUMN email VARCHAR(255);
 
 • DROP
+  DROP TABLE employees;
 
 • Indexes
+  CREATE INDEX idx_last_name ON employees (last_name);
 
 7.Query Filtering and Sorting
 

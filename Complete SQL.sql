@@ -73,9 +73,10 @@ TCL is used to manage transactions, ensuring the consistency and integrity of th
   INSERT INTO employees (employee_id, first_name, last_name, salary) VALUES (101, 'John', 'Doe', 50000);
 
 • UPDATE
- UPDATE employees SET salary = 55000 WHERE employee_id = 101;
+  UPDATE employees SET salary = 55000 WHERE employee_id = 101;
 
 • DELETE
+  DELETE FROM employees WHERE employee_id = 101;
 
 6. Data Definition • CREATE
 

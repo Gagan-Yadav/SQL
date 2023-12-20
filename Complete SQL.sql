@@ -80,7 +80,10 @@ TCL is used to manage transactions, ensuring the consistency and integrity of th
 
 6. Data Definition • CREATE
 
-• ALTER • DROP
+• ALTER
+  ALTER TABLE employees ADD COLUMN email VARCHAR(255);
+
+• DROP
 
 • Indexes
 

@@ -144,10 +144,11 @@ TCL is used to manage transactions, ensuring the consistency and integrity of th
 • Creating
   CREATE VIEW employee_view AS SELECT employee_id, first_name, last_name, salary FROM employees WHERE department_id = 1;
 
-
 • Modifying
+  CREATE OR REPLACE VIEW employee_view AS SELECT employee_id, first_name, last_name, salary FROM employees WHERE department_id = 2;
 
 • Dropping Views
+  DROP VIEW employee_view;
 
 12. Transactions
 

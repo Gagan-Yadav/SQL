@@ -174,13 +174,52 @@ Example: After a user confirms a purchase on an e-commerce website, the transact
 
 Ensuring that transactions adhere to the ACID properties is crucial for maintaining data integrity and reliability in database systems, especially in scenarios where multiple transactions may be occurring simultaneously.
 
+        BEGIN; -- Begin the transaction
+
+        UPDATE accounts SET balance = balance - 100 WHERE account_id = 123; -- Deduct $100 from account 123
+        UPDATE accounts SET balance = balance + 100 WHERE account_id = 456; -- Add $100 to account 456
+
+        COMMIT; -- Commit the transaction, making the changes permanent
+
+If any part of the transaction encounters an error, the transaction can be rolled back, and the database will be left in its original state:
+        
+        BEGIN;
+        UPDATE accounts SET balance = balance - 100 WHERE account_id = 123;
+        -- Simulate an error (e.g., a constraint violation)
+        ROLLBACK; -- Roll back the transaction, undoing any changes
+        -- The database remains unchanged
+
+Transactions are fundamental to maintaining data integrity, especially in scenarios with concurrent access and multiple users interacting with the database simultaneously. They ensure that the database remains in a reliable and consistent state, even in the presence of errors or system failures.
+
 • COMMIT
+    Purpose: Marks the successful end of a transaction.
+    Action: When a transaction is committed, all the changes made by the transaction, such as insertions, updates, or deletions, are permanently saved in the database.
+    Result: The changes are made visible to other transactions, ensuring that the database reflects the completed work.
 
 • ROLLBACK
+    Purpose: Undoes the changes made by a transaction.
+    Action: If an error or issue occurs during a transaction, the entire transaction can be rolled back, reverting the database to its state before the transaction started.
+    Result: The database remains unchanged, and no partial or incomplete changes from the transaction are applied.
 
 • SAVEPOINT
+    a SAVEPOINT is a feature that allows you to set a point within a transaction to which you can later roll back. It provides a way to create a temporary checkpoint within a larger transaction, giving you the flexibility to roll back to that specific point rather than rolling back the entire transaction.
+    Purpose: Establishes a named point within a transaction to which you can later roll back.
+    
+    Syntax:
+    SAVEPOINT savepoint_name;
+
+        BEGIN;
+        UPDATE accounts SET balance = balance - 100 WHERE account_id = 123; -- Deduct $100 from account 123
+        SAVEPOINT my_savepoint; -- Set a savepoint within the transaction
+        UPDATE accounts SET balance = balance + 100 WHERE account_id = 456; -- Add $100 to account 456
+        -- Simulate an error (e.g., a constraint violation)
+        ROLLBACK TO my_savepoint; -- Roll back to the savepoint, undoing changes after the savepoint
+        COMMIT; -- Commit the transaction with changes up to the savepoint
+
 
 • ROLLBACK TO SAVEPOINT
+    the ROLLBACK TO SAVEPOINT statement is used to undo part of a transaction by rolling back to a specific savepoint within that transaction. This allows you to revert the transaction to a particular state without rolling back the entire transaction.
+    The use of SAVEPOINT is particularly helpful in scenarios where you want to handle errors within a transaction without rolling back the entire transaction. It allows for more granular control over transaction management and helps in maintaining a consistent state even when certain parts of the transaction encounter issues.
 
 13.Stored Procedures
 

@@ -38,15 +38,34 @@
 
 4.Sub languages
 
-• DML
+1. DML (Data Manipulation Language):
 
-• DDL
+Purpose: DML is used for manipulating data stored in the database. It involves operations like querying data, inserting new records, updating existing records, and deleting records.
+Common Commands: SELECT, INSERT, UPDATE, DELETE
+  
+2. DDL (Data Definition Language):
+Purpose: DDL is used for defining and managing the structure of the database, including tables, indexes, and constraints. DDL statements are responsible for creating, altering, and deleting database objects.
+Common Commands: CREATE, ALTER, DROP
+  
+3. DQL (Data Query Language):
+Purpose: DQL is a subset of SQL that specifically deals with the retrieval of information from the database. It is used for querying the database to extract specific information based on certain criteria.
+Common Commands: SELECT
+  
+4. DCL (Data Control Language):
+Purpose: DCL is concerned with the permissions and access control of the database. It includes commands that control who can access the database, what operations they can perform, and what data they can see.
+Common Commands: GRANT, REVOKE
+  
+5. TCL (Transaction Control Language):
+Purpose: TCL is used to manage transactions within a database. Transactions are sequences of one or more SQL statements that are treated as a single unit of work. TCL statements control the beginning and end of transactions.
+Common Commands: COMMIT, ROLLBACK, SAVEPOINT
+  
+In summary:
 
-DQL
-
-• DCL
-
-• TCL
+DML is focused on manipulating data (SELECT for querying, INSERT, UPDATE, DELETE for modifying data).
+DDL is focused on defining and managing the structure of the database (CREATE for creating tables, ALTER for modifying structures, DROP for deleting objects).
+DQL is specifically for querying data and retrieving information from the database (SELECT).
+DCL is concerned with controlling access to the database, specifying who can do what (GRANT for providing permissions, REVOKE for revoking permissions).
+TCL is used to manage transactions, ensuring the consistency and integrity of the database (COMMIT for making changes permanent, ROLLBACK for undoing changes, SAVEPOINT for marking points within a transaction).
 
 5. Data Manipulation
 

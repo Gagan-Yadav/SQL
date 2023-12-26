@@ -298,10 +298,26 @@ Transactions are fundamental to maintaining data integrity, especially in scenar
       User-Defined Functions (UDFs) in a database system are custom functions created by users to perform specific operations. These functions can encapsulate a set of SQL statements and be used in SQL queries, providing modularity and reusability of code. There are two main types of UDFs: Scalar Functions and Table-Valued Functions.
 
 14.Triggers
-      
-Triggers in a database system are special types of stored procedures that are automatically executed (or "triggered") in response to specific events occurring in the database. These events can include data modifications (inserts, updates, deletes), or other changes to the database schema. Triggers are useful for enforcing data integrity, automating tasks, or logging changes.
+      Triggers in a database system are special types of stored procedures that are automatically executed (or "triggered") in response to specific events occurring in the database. These events can include data modifications (inserts, updates, deletes), or other changes to the database schema. Triggers are useful for enforcing data integrity, automating tasks, or logging changes.
 
 • Trigger Events
+      Purpose: Define the events that will activate a trigger.
+      Common Events:
+      BEFORE INSERT: Triggered before a new row is inserted into a table.
+      AFTER INSERT: Triggered after a new row is inserted into a table.
+      BEFORE UPDATE: Triggered before a row is updated.
+      AFTER UPDATE: Triggered after a row is updated.
+      BEFORE DELETE: Triggered before a row is deleted.
+      AFTER DELETE: Triggered after a row is deleted.
+
+      Syntax:
+        CREATE TRIGGER trigger_name
+        BEFORE/AFTER INSERT/UPDATE/DELETE ON table_name
+        FOR EACH ROW
+        BEGIN
+            -- Trigger logic here
+        END;
+
 
 • Trigger Execution and Syntax
 

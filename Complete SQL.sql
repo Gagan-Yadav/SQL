@@ -265,6 +265,28 @@ Transactions are fundamental to maintaining data integrity, especially in scenar
       procedure_name: The name of the stored procedure.
       parameters: Input values passed to the procedure.
 
+      {
+        Example: 
+            -- CREATE PROCEDURE
+            CREATE PROCEDURE GetEmployeeDetails(IN employee_id INT)
+            BEGIN
+                SELECT * FROM employees WHERE employee_id = employee_id;
+            END;
+
+            -- ALTER PROCEDURE
+            ALTER PROCEDURE GetEmployeeDetails(IN employee_id INT, IN department_id INT)
+            BEGIN
+                SELECT * FROM employees WHERE employee_id = employee_id AND department_id = department_id;
+            END;
+
+            -- DROP PROCEDURE
+            DROP PROCEDURE IF EXISTS GetEmployeeDetails;
+
+            -- EXECUTE PROCEDURE
+            CALL GetEmployeeDetails(101);
+            
+      }
+
 • User-Defined Functions (UDFs)
 
 14.Triggers

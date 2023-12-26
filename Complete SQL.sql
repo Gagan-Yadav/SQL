@@ -248,12 +248,22 @@ Transactions are fundamental to maintaining data integrity, especially in scenar
         BEGIN
          -- Modified SQL statements
         END;
+
     procedure_name: The name of the stored procedure.
     parameters: Input and output parameters for the procedure.
 
 • DROP PROCEDURE
+      Purpose: To remove an existing stored procedure from the database.
+      Syntax:
+          DROP PROCEDURE IF EXISTS procedure_name;
 
 • EXECUTE PROCEDURE
+      Purpose: To invoke and execute a stored procedure.
+      Syntax:
+          CALL procedure_name(parameters);
+
+      procedure_name: The name of the stored procedure.
+      parameters: Input values passed to the procedure.
 
 • User-Defined Functions (UDFs)
 

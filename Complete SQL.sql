@@ -298,6 +298,8 @@ Transactions are fundamental to maintaining data integrity, especially in scenar
       User-Defined Functions (UDFs) in a database system are custom functions created by users to perform specific operations. These functions can encapsulate a set of SQL statements and be used in SQL queries, providing modularity and reusability of code. There are two main types of UDFs: Scalar Functions and Table-Valued Functions.
 
 14.Triggers
+      
+Triggers in a database system are special types of stored procedures that are automatically executed (or "triggered") in response to specific events occurring in the database. These events can include data modifications (inserts, updates, deletes), or other changes to the database schema. Triggers are useful for enforcing data integrity, automating tasks, or logging changes.
 
 • Trigger Events
 

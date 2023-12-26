@@ -341,7 +341,9 @@ Transactions are fundamental to maintaining data integrity, especially in scenar
 
 15. Security and Permissions
 
-• CREATE USER • GRANT
+• CREATE USER 
+
+• GRANT
 
 • REVOKE
 

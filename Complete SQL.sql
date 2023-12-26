@@ -284,10 +284,18 @@ Transactions are fundamental to maintaining data integrity, especially in scenar
 
             -- EXECUTE PROCEDURE
             CALL GetEmployeeDetails(101);
-            
+
+            {
+              In this example, a stored procedure GetEmployeeDetails is initially created, altered to accept an additional parameter,
+              and then dropped. The CALL statement is used to execute the stored procedure with a specific parameter. These SQL
+              statements are generally executed in a database management tool or within the application code to interact with the 
+              database.
+            }
+
       }
 
 • User-Defined Functions (UDFs)
+      User-Defined Functions (UDFs) in a database system are custom functions created by users to perform specific operations. These functions can encapsulate a set of SQL statements and be used in SQL queries, providing modularity and reusability of code. There are two main types of UDFs: Scalar Functions and Table-Valued Functions.
 
 14.Triggers
 

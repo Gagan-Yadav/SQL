@@ -325,6 +325,19 @@ Transactions are fundamental to maintaining data integrity, especially in scenar
       FOR EACH ROW: Indicates that the trigger should be executed once for each affected row.     
 
 • Trigger Execution and Syntax
+        Purpose: Define the logic that should be executed when the trigger is activated.
+        Syntax:
+            CREATE TRIGGER trigger_name
+            BEFORE/AFTER INSERT/UPDATE/DELETE ON table_name
+            FOR EACH ROW
+            BEGIN
+                -- Trigger logic here
+            END;
+
+        The trigger logic is written between the BEGIN and END keywords.
+        The NEW and OLD keywords can be used to reference the new and old values of the affected rows in the trigger logic.
+        The trigger logic can include SQL statements, conditional statements, and other procedural code.
+
 
 15. Security and Permissions
 

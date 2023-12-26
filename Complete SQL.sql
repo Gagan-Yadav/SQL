@@ -222,6 +222,7 @@ Transactions are fundamental to maintaining data integrity, especially in scenar
     The use of SAVEPOINT is particularly helpful in scenarios where you want to handle errors within a transaction without rolling back the entire transaction. It allows for more granular control over transaction management and helps in maintaining a consistent state even when certain parts of the transaction encounter issues.
 
 13.Stored Procedures
+    Stored Procedures are a set of SQL statements that are stored and executed on the database server. They allow for the encapsulation of a series of SQL statements into a single named routine, which can be called and executed by applications or other procedures.
 
 • CREATE PROCEDURE
 

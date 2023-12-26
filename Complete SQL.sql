@@ -318,6 +318,11 @@ Transactions are fundamental to maintaining data integrity, especially in scenar
             -- Trigger logic here
         END;
 
+      trigger_name: The name of the trigger.
+      BEFORE/AFTER: Specifies whether the trigger should execute before or after the event.
+      INSERT/UPDATE/DELETE: Specifies the type of event that activates the trigger.
+      table_name: The name of the table on which the trigger is defined.
+      FOR EACH ROW: Indicates that the trigger should be executed once for each affected row.     
 
 • Trigger Execution and Syntax
 

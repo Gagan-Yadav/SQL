@@ -223,6 +223,12 @@ Transactions are fundamental to maintaining data integrity, especially in scenar
 
 13.Stored Procedures
     Stored Procedures are a set of SQL statements that are stored and executed on the database server. They allow for the encapsulation of a series of SQL statements into a single named routine, which can be called and executed by applications or other procedures.
+    Purpose: To group and execute a set of SQL statements as a single unit.
+    Features:
+        Input and output parameters can be defined.
+        Can contain conditional statements, loops, and error handling.
+        Promotes code reusability and maintainability.
+        Can be called from applications or other stored procedures.
 
 • CREATE PROCEDURE
 

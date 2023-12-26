@@ -231,8 +231,25 @@ Transactions are fundamental to maintaining data integrity, especially in scenar
         Can be called from applications or other stored procedures.
 
 • CREATE PROCEDURE
+    Purpose: To define and create a new stored procedure in the database.
+    Syntax:
+        CREATE PROCEDURE procedure_name(parameters)
+        BEGIN
+        -- SQL statements
+        END;
+
+    procedure_name: The name of the stored procedure.
+    parameters: Input and output parameters for the procedure.
 
 • ALTER PROCEDURE
+    Purpose: To modify the definition of an existing stored procedure.
+    Syntax:
+        ALTER PROCEDURE procedure_name(parameters)
+        BEGIN
+         -- Modified SQL statements
+        END;
+    procedure_name: The name of the stored procedure.
+    parameters: Input and output parameters for the procedure.
 
 • DROP PROCEDURE
 

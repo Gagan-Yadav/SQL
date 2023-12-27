@@ -342,6 +342,12 @@ Transactions are fundamental to maintaining data integrity, especially in scenar
 15. Security and Permissions
 
 • CREATE USER 
+      Purpose: To create a new user account in the database.
+      Syntax:
+          CREATE USER username [IDENTIFIED BY 'password'];
+
+      username: The name of the new user.
+      IDENTIFIED BY 'password': Optional. Specifies the password for the user.
 
 • GRANT
 

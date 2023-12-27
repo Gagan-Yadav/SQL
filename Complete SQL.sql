@@ -353,12 +353,19 @@ Transactions are fundamental to maintaining data integrity, especially in scenar
       Purpose: To give specific privileges or access rights to a user.
       Syntax:
           GRANT privilege(s) ON object TO user;
-          
+
       privilege(s): The specific privileges (e.g., SELECT, INSERT, UPDATE) granted to the user.
       object: The database object (e.g., table, view) on which the privileges are granted.
       user: The user to whom the privileges are granted.
 
 • REVOKE
+      Purpose: To revoke previously granted privileges from a user.
+      Syntax:
+          REVOKE privilege(s) ON object FROM user;
+
+      privilege(s): The specific privileges to be revoked.
+      object: The database object from which the privileges are revoked.
+      user: The user from whom the privileges are revoked.
 
 • ALTER USER
 

@@ -371,11 +371,16 @@ Transactions are fundamental to maintaining data integrity, especially in scenar
       Purpose: To modify properties or settings of an existing user.
       Syntax:
           ALTER USER username [options];
-          
+
       username: The name of the user to be modified.
       options: Various options that can be modified, such as changing the password or account status.
 
 • DROP USER
+      Purpose: To remove an existing user account from the database.
+      Syntax:
+          DROP USER username;
+          
+      username: The name of the user to be dropped.
 
 16.Optimizations
 

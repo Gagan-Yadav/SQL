@@ -419,6 +419,42 @@ Transactions are fundamental to maintaining data integrity, especially in scenar
         Consider the trade-offs between the performance gain of indexing and the overhead of maintaining indexes during data modifications (INSERT, UPDATE, DELETE).
 
 • Query Optimization
+Query Execution Plan:
+
+A query execution plan is a strategy chosen by the database engine to retrieve and process data based on the SQL query.
+The plan outlines how the database will access tables and apply conditions to return the result set.
+Common Optimization Techniques:
+
+Use of Indexes:
+Utilize appropriate indexes to speed up data retrieval.
+Properly Structured Queries:
+Write efficient and well-structured queries.
+Avoid unnecessary SELECT * and use specific columns.
+Avoiding SELECT DISTINCT:
+Use DISTINCT sparingly, as it can be resource-intensive.
+Use of Joins:
+Be mindful of the type of joins used (INNER JOIN, LEFT JOIN) and their impact on performance.
+Limiting Result Sets:
+Use LIMIT/OFFSET or FETCH FIRST clauses to limit the number of returned rows.
+Avoiding Subqueries When Possible:
+Subqueries can be resource-intensive; try to use JOINs or other methods.
+Table Partitioning:
+
+Partitioning involves dividing large tables into smaller, more manageable pieces.
+Can improve query performance by reducing the amount of data that needs to be scanned.
+Materialized Views:
+
+A materialized view is a precomputed, stored result of a query.
+Can be used to improve the performance of complex queries by storing intermediate results.
+Regular Database Maintenance:
+
+Regularly analyze and update statistics on tables and indexes.
+Perform index maintenance and optimize database configuration parameters.
+Use of Caching:
+
+Utilize database query caching to store and reuse results of frequently executed queries.
+Cache frequently accessed data to reduce the need for repeated queries.
+Optimizations should be approached with consideration for the specific database system in use, the nature of the data, and the types of queries executed. Regular monitoring and performance tuning are essential for maintaining optimal database performance.
 
 17.Normalization
 

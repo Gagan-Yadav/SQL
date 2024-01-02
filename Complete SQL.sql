@@ -5,7 +5,9 @@
 
 • Definition
 
-• Purpose • Relational DBs
+• Purpose 
+  
+• Relational DBs
 
 • DBMS
 

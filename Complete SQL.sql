@@ -1,15 +1,4 @@
-
-
-
-
-
-
-s
-
-
-s
-  
-1. Intro to SQL
+  1. Intro to SQL
 
 • Definition
 

@@ -502,7 +502,9 @@ Optimizations should be approached with consideration for the specific database 
 
 23. Data Import and Export
 
-• Importing and Exporting Data (CSV, JSON) • Using SQL Dump Files
+• Importing and Exporting Data (CSV, JSON) 
+        
+• Using SQL Dump Files
 
 24. Database Design
 
